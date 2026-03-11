@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2526D823F0C638BE6CAC5B8C /* EyeMotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F3D729BB7D2E81140D70DB /* EyeMotionModel.swift */; };
+		62CC2EE2BA385C7064B2BC03 /* AEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7534A2943F0170DE9C910BF4 /* AEyeApp.swift */; };
 		AA000001AAAA000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000002AAAA000000000001 /* Assets.xcassets */; };
 		AA000001AAAA000000000002 /* motu-avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA000002AAAA000000000002 /* motu-avatar.jpg */; };
 		AA000001AAAA000000000003 /* motu-avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = AA000002AAAA000000000003 /* motu-avatar.png */; };
-		2526D823F0C638BE6CAC5B8C /* EyeMotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F3D729BB7D2E81140D70DB /* EyeMotionModel.swift */; };
-		62CC2EE2BA385C7064B2BC03 /* AEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7534A2943F0170DE9C910BF4 /* AEyeApp.swift */; };
 		FC67643D7A9E5EA24DB6E25B /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6AF06BF50A5C2FE41ABF2 /* EyeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		215EAE1616C36252A0A76654 /* AEye.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		215EAE1616C36252A0A76654 /* AEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		356D06C85736E93D9EEEF72C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7534A2943F0170DE9C910BF4 /* AEyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEyeApp.swift; sourceTree = "<group>"; };
 		A8F3D729BB7D2E81140D70DB /* EyeMotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeMotionModel.swift; sourceTree = "<group>"; };
@@ -38,6 +38,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		927079A47BC2FEC754C174C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				215EAE1616C36252A0A76654 /* AEye.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AA000003AAAA000000000001 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -46,14 +54,6 @@
 				AA000002AAAA000000000003 /* motu-avatar.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		927079A47BC2FEC754C174C5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				215EAE1616C36252A0A76654 /* AEye.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FF288559851D15C83783BB6B = {
@@ -93,9 +93,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-				};
+				LastUpgradeCheck = 2630;
 			};
 			buildConfigurationList = 28420D310B4FA133778DE653 /* Build configuration list for PBXProject "AEye" */;
 			developmentRegion = en;
@@ -195,8 +193,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W3WTXTKNLD;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -217,6 +217,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -275,8 +276,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W3WTXTKNLD;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -290,6 +293,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
