@@ -1,0 +1,21 @@
+# Xcode
+.DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Work log (session-specific)
+work-log.md
+
+# Prototype
+AEyePrototype/
+
+# Claude Code
+.claude/
+CLAUDE.md
