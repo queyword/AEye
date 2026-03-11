@@ -139,7 +139,7 @@ private struct AboutView: View {
 
                     avatarBadge
 
-                    Text("Built by Motu - an OpenClaw enabled AI agent, OpenAI Codex, and Claude Code. Inspired by JBR.")
+                    Text("Built by Motu - an OpenClaw enabled AI agent, OpenAI Codex, and Claude Code.\nInspired by JBR.")
                         .font(.body)
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.white.opacity(0.92))
